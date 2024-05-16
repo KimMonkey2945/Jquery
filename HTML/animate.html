@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+
+    $(function () {
+      // $('.btn').on('click', function () {
+      //   $('.ani_box').animate({ top: '200px', left: '200px', width: '300px', fontSize: '6rem', padding: '100px' }, 300, function () {
+      //     $(this).css('background-color', 'gold')
+      //   })
+      // })
+      $('.btn').on('click', function () {
+        $('.ani_box').animate({ width: '200px' }, 'slow')
+        $('.ani_box').animate({ height: '200px' }, 'slow')
+        $('.ani_box').animate({ width: '100px' }, 'slow')
+        $('.ani_box').animate({ height: '100px' }, 'slow')
+      })
+    })
+
+  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    div.ani_box {
+      width: 100px;
+      height: 100px;
+      background-color: yellowgreen;
+      position: absolute;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn">클릭</button>
+  <div class="ani_box">고예림</div>
+
+
+</body>
+
+</html>
