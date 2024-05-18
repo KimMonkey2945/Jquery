@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('#btn').on('click', function () {
+        // $('#display').text('width : ' + $('.dim').width() + ' hight : ' + $('.dim').height())
+        // $('#display').text('width : ' + $('.dim').innerWidth() + ' hight : ' + $('.dim').innerHeight()) // 정확인 크기를 측정
+        $('#display').text('width : ' + $('.dim').outerWidth() + ' hight : ' + $('.dim').outerHeight())
+      })
+    })
+  </script>
+  <title>Document</title>
+  <style>
+    div.dim {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      border: 10px solid red;
+      background-color: goldenrod;
+    }
+
+    div.dim1 {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <button id="btn">클릭</button>
+  <span>크기출력 : </span>
+  <span id="display"></span>
+  <div class="dim"></div>
+  <div class="dim1"></div>
+
+
+</body>
+
+</html>

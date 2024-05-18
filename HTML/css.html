@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <script>
+    $(function () {
+      $('div').on('mouseover', function () {
+        // $('#display').text($(this).css('background-color')) // css 속성값 가져오기
+        // $(this).css('background-color', 'black').css('border', '10px solid red').css('color', 'white')
+        $(this).css({
+          'background-color': 'black',
+          'border': '10px solid red',
+          'color': 'white'
+        })
+      })
+    })
+  </script>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    #a {
+      background-color: #ccddee;
+    }
+
+    #b {
+      background-color: #335588;
+    }
+
+    #c {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="a">a</div>
+  <div id="b">b</div>
+  <div id="c">c</div>
+  <span id="display"></span>
+
+</body>
+
+</html>
