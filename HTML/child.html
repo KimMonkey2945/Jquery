@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('#btn').on('click', function () {
+        // $('div').children('p.na').css({ border: '2px solid red' }) // children은 바로 밑의 자식들만 선택
+        $('div').find('*').css({ border: '2px solid red' }) // 전체가 해당
+      })
+    })
+  </script>
+  <style>
+    div * {
+      border: 2px solid gray;
+      display: block;
+      padding: 10px;
+      margin: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn">클릭</button>
+  <div>
+    <div>div</div>
+    <p>p
+      <span>span</span>
+    </p>
+    <p class="na">p</p>
+    <p>p
+      <span>span</span>
+    </p>
+    <p>p</p>
+  </div>
+
+</body>
+
+</html>

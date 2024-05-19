@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('#btn').on('click', function () {
+        // $('p').first().css({ border: '2px solid red' })
+        // $('p').last().css({ border: '2px solid red' })
+        // $('p').eq(3).css({ border: '2px solid red' }) // 안에 숫자를 입력
+        // $('p').not('.iam').css({ border: '2px solid red' })
+        $('p').filter('.iam').css({ border: '2px solid red' })
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <button id="btn">클릭</button>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi natus incidunt deleniti eligendi dolores ratione est
+    asperiores quod hic, officiis quae, saepe recusandae vero culpa necessitatibus omnis inventore dolorem eveniet!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi natus incidunt deleniti eligendi dolores ratione est
+    asperiores quod hic, officiis quae, saepe recusandae vero culpa necessitatibus omnis inventore dolorem eveniet!</p>
+
+  <p class="iam">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi natus incidunt deleniti eligendi dolores
+    ratione est
+    asperiores quod hic, officiis quae, saepe recusandae vero culpa necessitatibus omnis inventore dolorem eveniet!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi natus incidunt deleniti eligendi dolores ratione est
+    asperiores quod hic, officiis quae, saepe recusandae vero culpa necessitatibus omnis inventore dolorem eveniet!</p>
+</body>
+
+</html>
